@@ -1,9 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/light/TaubSans-Light.eot");
+  src: url("../assets/fonts/TaubSans/light/TaubSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TaubSans/light/TaubSans-Light.woff2") format("woff2"), url("../assets/fonts/TaubSans/light/TaubSans-Light.woff") format("woff"), url("../assets/fonts/TaubSans/light/TaubSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/regular/TaubSans-Regular.eot");
+  src: url("../assets/fonts/TaubSans/regular/TaubSans-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TaubSans/regular/TaubSans-Regular.woff2") format("woff2"), url("../assets/fonts/TaubSans/regular/TaubSans-Regular.woff") format("woff"), url("../assets/fonts/TaubSans/regular/TaubSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/medium/TaubSans-Medium.eot");
+  src: url("../assets/fonts/TaubSans/medium/TaubSans-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TaubSans/medium/TaubSans-Medium.woff2") format("woff2"), url("../assets/fonts/TaubSans/medium/TaubSans-Medium.woff") format("woff"), url("../assets/fonts/TaubSans/medium/TaubSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/bold/TaubSans-Bold.eot");
+  src: url("../assets/fonts/TaubSans/bold/TaubSans-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TaubSans/bold/TaubSans-Bold.woff2") format("woff2"), url("../assets/fonts/TaubSans/bold/TaubSans-Bold.woff") format("woff"), url("../assets/fonts/TaubSans/bold/TaubSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.eot");
+  src: url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.woff2") format("woff2"), url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.woff") format("woff"), url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaubDisplay';
+  src: url("../assets/fonts/TaubDisplay/TaubDisplay-C.eot");
+  src: url("../assets/fonts/TaubDisplay/TaubDisplay-C.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TaubDisplay/TaubDisplay-C.woff2") format("woff2"), url("../assets/fonts/TaubDisplay/TaubDisplay-C.woff") format("woff"), url("../assets/fonts/TaubDisplay/TaubDisplay-C.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* line 5, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
 body {
   background-color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "TaubSans", times, "Open Sans", sans-serif;
   font-style: normal;
   font-size: 16px;
   color: #222222;
@@ -15,7 +63,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #0d3b69;
+  color: #121C4E;
   font-weight: bold;
   line-height: 1.3;
   text-transform: none;
@@ -31,11 +79,12 @@ p {
   color: #222222;
   line-height: 1.3;
   word-wrap: break-word;
+  font-weight: 400;
 }
 
-/* line 37, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 38, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
 a {
-  color: #ffcc00;
+  color: #F2635D;
   line-height: 1.3;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
@@ -44,19 +93,19 @@ a {
 
 /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
 a:hover, a:active, a:focus {
-  color: #ffcc00;
+  color: #F2635D;
   text-decoration: underline;
 }
 
-/* line 51, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 52, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
 ::-moz-selection {
-  background: #0d3b69;
+  background: #121C4E;
   color: #fff;
 }
 
-/* line 56, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 57, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
 ::selection {
-  background: #0d3b69;
+  background: #121C4E;
   color: #fff;
 }
 
@@ -146,7 +195,7 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 
 /* line 27, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 .top-social {
-  background-color: #2d88c1;
+  background-color: #1F347F;
 }
 
 /* line 30, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
@@ -182,7 +231,7 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 
 /* line 65, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 .navbar-default .navbar-header {
-  background-color: #2d88c1;
+  background-color: #1F347F;
   height: auto;
   position: relative;
 }
@@ -231,7 +280,7 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 .navbar-default .navbar-toggle.hamburger .icon-bar {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #0d3b69;
+  background-color: #121C4E;
   height: 3px;
   width: 25px;
 }
@@ -281,7 +330,7 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 
 /* line 166, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 .navbar-default .navbar-toggle.search-toggle-button-mobile {
-  color: #0d3b69;
+  color: #121C4E;
   position: absolute;
   top: calc(50% - 14px);
   bottom: auto;
@@ -299,7 +348,7 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 
 /* line 195, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 .navbar-default .navbar-collapse {
-  background-color: #0d3b69;
+  background-color: #121C4E;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -331,20 +380,20 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
 .navbar-default ul.navbar-nav li a:hover, .navbar-default ul.navbar-nav li a:active, .navbar-default ul.navbar-nav li a:focus, .navbar-default ul.navbar-nav .open ul.dropdown-menu > li > a:hover, .navbar-default ul.navbar-nav .open ul.dropdown-menu > li > a:active, .navbar-default ul.navbar-nav .open ul.dropdown-menu > li > a:focus, .navbar-default ul.navbar-nav ul.dropdown-menu > li > a:hover, .navbar-default ul.navbar-nav ul.dropdown-menu > li > a:active, .navbar-default ul.navbar-nav ul.dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #ffcc00;
+  background-color: #F2635D;
   text-decoration: none;
 }
 
 /* line 268, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 .navbar-default ul.navbar-nav li.active > a {
   color: #fff;
-  background-color: #ffcc00;
+  background-color: #F2635D;
 }
 
 /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
 .navbar-default ul.navbar-nav li.active > a:hover, .navbar-default ul.navbar-nav li.active > a:active, .navbar-default ul.navbar-nav li.active > a:focus {
   color: #fff;
-  background-color: #d9ad00;
+  background-color: #ce544f;
 }
 
 /* line 282, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
@@ -355,13 +404,13 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 /* line 294, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 .navbar-default ul.navbar-nav li.dropdown.open > a {
   color: #fff;
-  background-color: #ffcc00;
+  background-color: #F2635D;
   border-color: transparent;
 }
 
 /* line 306, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu {
-  background-color: #0b3259;
+  background-color: #0f1842;
   text-align: center;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -376,19 +425,19 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
 .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu > li > a:hover, .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu > li > a:active, .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu > li > a:focus, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu > li > a:hover, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu > li > a:active, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #ffcc00;
+  background-color: #F2635D;
 }
 
 /* line 338, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu > li.active > a, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu > li.active > a {
   color: #fff;
-  background-color: #ffcc00;
+  background-color: #F2635D;
 }
 
 /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
 .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu > li.active > a:hover, .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu > li.active > a:active, .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu > li.active > a:focus, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu > li.active > a:hover, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu > li.active > a:active, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu > li.active > a:focus {
   color: #fff;
-  background-color: #d9ad00;
+  background-color: #ce544f;
 }
 
 @media (min-width: 768px) {
@@ -473,26 +522,26 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
   }
   /* line 498, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
   .navbar-default ul.navbar-nav li a, .navbar-default ul.navbar-nav .open ul.dropdown-menu > li > a, .navbar-default ul.navbar-nav ul.dropdown-menu > li > a {
-    color: #0d3b69;
+    color: #121C4E;
     padding: 10px 15px;
     word-break: normal;
     white-space: nowrap;
   }
   /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
   .navbar-default ul.navbar-nav li a:hover, .navbar-default ul.navbar-nav li a:active, .navbar-default ul.navbar-nav li a:focus, .navbar-default ul.navbar-nav .open ul.dropdown-menu > li > a:hover, .navbar-default ul.navbar-nav .open ul.dropdown-menu > li > a:active, .navbar-default ul.navbar-nav .open ul.dropdown-menu > li > a:focus, .navbar-default ul.navbar-nav ul.dropdown-menu > li > a:hover, .navbar-default ul.navbar-nav ul.dropdown-menu > li > a:active, .navbar-default ul.navbar-nav ul.dropdown-menu > li > a:focus {
-    color: #ffcc00;
+    color: #F2635D;
     background-color: transparent;
     text-decoration: none;
   }
   /* line 515, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
   .navbar-default ul.navbar-nav li.active > a {
-    color: #ffcc00;
+    color: #F2635D;
     background-color: transparent;
   }
   /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
   .navbar-default ul.navbar-nav li.active > a:hover, .navbar-default ul.navbar-nav li.active > a:active, .navbar-default ul.navbar-nav li.active > a:focus {
     background-color: transparent;
-    color: #d9ad00;
+    color: #ce544f;
   }
   /* line 533, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
   .navbar-default ul.navbar-nav li.dropdown.open:hover ul.dropdown-menu, .navbar-default ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
@@ -500,12 +549,12 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
   }
   /* line 550, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
   .navbar-default ul.navbar-nav li.dropdown.open > a {
-    color: #ffcc00;
+    color: #F2635D;
     background-color: transparent;
   }
   /* line 561, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
   .navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu, .navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu {
-    background-color: #0d3b69;
+    background-color: #121C4E;
     text-align: left;
     width: 100%;
     border: none;
@@ -561,7 +610,7 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 
 /* line 35, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/components/_button.scss */
 .primary-button, .btn-default, .btn-general {
-  background-color: #ffcc00;
+  background-color: #F2635D;
   color: #fff;
   padding: 8.5px 15px;
   border: none;
@@ -583,13 +632,13 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
 .primary-button:hover, .primary-button:active, .primary-button:focus, .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-general:hover, .btn-general:active, .btn-general:focus {
   color: #fff;
-  background-color: #d9ad00;
+  background-color: #ce544f;
   text-decoration: none;
 }
 
 /* line 39, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/components/_button.scss */
 .primary-button.active.focus, .primary-button.active:focus, .primary-button.active:hover, .primary-button:active.focus, .primary-button:active:focus, .primary-button:active:hover, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .btn-general.active.focus, .btn-general.active:focus, .btn-general.active:hover, .btn-general:active.focus, .btn-general:active:focus, .btn-general:active:hover {
-  background-color: #ffcc00;
+  background-color: #F2635D;
   color: #fff;
   padding: 8.5px 15px;
   border: none;
@@ -611,7 +660,7 @@ header.home-header .navbar-default .navbar-toggle.search-toggle-button-mobile {
 /* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
 .primary-button.active.focus:hover, .primary-button.active.focus:active, .primary-button.active.focus:focus, .primary-button.active:focus:hover, .primary-button.active:focus:active, .primary-button.active:focus:focus, .primary-button.active:hover:hover, .primary-button.active:hover:active, .primary-button.active:hover:focus, .primary-button:active.focus:hover, .primary-button:active.focus:active, .primary-button:active.focus:focus, .primary-button:active:focus:hover, .primary-button:active:focus:active, .primary-button:active:focus:focus, .primary-button:active:hover:hover, .primary-button:active:hover:active, .primary-button:active:hover:focus, .btn-default.active.focus:hover, .btn-default.active.focus:active, .btn-default.active.focus:focus, .btn-default.active:focus:hover, .btn-default.active:focus:active, .btn-default.active:focus:focus, .btn-default.active:hover:hover, .btn-default.active:hover:active, .btn-default.active:hover:focus, .btn-default:active.focus:hover, .btn-default:active.focus:active, .btn-default:active.focus:focus, .btn-default:active:focus:hover, .btn-default:active:focus:active, .btn-default:active:focus:focus, .btn-default:active:hover:hover, .btn-default:active:hover:active, .btn-default:active:hover:focus, .btn-general.active.focus:hover, .btn-general.active.focus:active, .btn-general.active.focus:focus, .btn-general.active:focus:hover, .btn-general.active:focus:active, .btn-general.active:focus:focus, .btn-general.active:hover:hover, .btn-general.active:hover:active, .btn-general.active:hover:focus, .btn-general:active.focus:hover, .btn-general:active.focus:active, .btn-general:active.focus:focus, .btn-general:active:focus:hover, .btn-general:active:focus:active, .btn-general:active:focus:focus, .btn-general:active:hover:hover, .btn-general:active:hover:active, .btn-general:active:hover:focus {
   color: #fff;
-  background-color: #d9ad00;
+  background-color: #ce544f;
   text-decoration: none;
 }
 

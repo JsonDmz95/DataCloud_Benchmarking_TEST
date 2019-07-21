@@ -3,8 +3,8 @@
 // -----------------------------------------------------------------------------
 
 /// Fonts
-$primary-font: 'Open Sans', sans-serif;
-$secondary-font: 'Montserrat', sans-serif;
+$primary-font: 'TaubSans', times, 'Open Sans', sans-serif;
+$secondary-font: 'TaubDisplay', times, sans-serif;
 
 /// Font-size
 $body-font-size: 16px;
@@ -18,46 +18,27 @@ $text-color: #222222 !default;
 $white: #fff;
 $black: #000;
 $grey: #ccc;
-$wrongurl-color: #eee;
+
+$blue: #121C4E;
+$tint-blue: #1F347F;
+$red: #F2635D;
+
 
 // Company color pallete
-$primary-color: #0d3b69;
-$secondary-color: #2d88c1;
-$third-color: #ffcc00;
+$primary-color: $blue;
+$secondary-color: $tint-blue;
+$third-color: $red;
 
 // Button and hover color
 $btn-color: $third-color;
 $hover-color: $third-color;
-$internals-links: $hover-color;
 
-$facets-color: $secondary-color;
-$facets-title: $primary-color;
-$internals-titles: $primary-color;
 
 $body-color: $white;
 
 /// For search box (labels inline with the inputs)
 $label-inline: false; /// <- true or false (default false)
 
-/// For search small (similar as the mobile search)
-$search-small: false; /// <- true or false (default false)
-
-
-/// Hide location dropdown
-$hide-dropdown: false; /// <- true or false (default false)
-
-/// Hide cookies bar
-$hide-cookies-bar: true; /// <- true or false (default false)
-
-// Multi-brand is enable
-$multi-brand: false; /// <- true or false (default false)
-
-
-/// For rounded facets
-$rounded-facet: false; /// <- true or false (default false)
-
-/// For full facets
-$full-facet: false; /// <- true or false (default false)
 
 
 $base-url: '/assets/' !default;

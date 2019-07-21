@@ -18,8 +18,80 @@
 /// Moserrat
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
 
-/// Font Awesome 4.7.0
-// @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/// Taub Sans Font
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/light/TaubSans-Light.eot");
+  src: url("../assets/fonts/TaubSans/light/TaubSans-Light.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/TaubSans/light/TaubSans-Light.woff2") format("woff2"),
+  url("../assets/fonts/TaubSans/light/TaubSans-Light.woff") format("woff"),
+  url("../assets/fonts/TaubSans/light/TaubSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/regular/TaubSans-Regular.eot");
+  src: url("../assets/fonts/TaubSans/regular/TaubSans-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/TaubSans/regular/TaubSans-Regular.woff2") format("woff2"),
+  url("../assets/fonts/TaubSans/regular/TaubSans-Regular.woff") format("woff"),
+  url("../assets/fonts/TaubSans/regular/TaubSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/medium/TaubSans-Medium.eot");
+  src: url("../assets/fonts/TaubSans/medium/TaubSans-Medium.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/TaubSans/medium/TaubSans-Medium.woff2") format("woff2"),
+  url("../assets/fonts/TaubSans/medium/TaubSans-Medium.woff") format("woff"),
+  url("../assets/fonts/TaubSans/medium/TaubSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/bold/TaubSans-Bold.eot");
+  src: url("../assets/fonts/TaubSans/bold/TaubSans-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/TaubSans/bold/TaubSans-Bold.woff2") format("woff2"),
+  url("../assets/fonts/TaubSans/bold/TaubSans-Bold.woff") format("woff"),
+  url("../assets/fonts/TaubSans/bold/TaubSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaubSans';
+  src: url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.eot");
+  src: url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.woff2") format("woff2"),
+  url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.woff") format("woff"),
+  url("../assets/fonts/TaubSans/heavy/TaubSans-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/// End Taub Sans Font
+
+/// Taub Display Font
+
+@font-face {
+  font-family: 'TaubDisplay';
+  src: url("../assets/fonts/TaubDisplay/TaubDisplay-C.eot");
+  src: url("../assets/fonts/TaubDisplay/TaubDisplay-C.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/TaubDisplay/TaubDisplay-C.woff2") format("woff2"),
+  url("../assets/fonts/TaubDisplay/TaubDisplay-C.woff") format("woff"),
+  url("../assets/fonts/TaubDisplay/TaubDisplay-C.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/// End Taub Display Font
 
 /// Custom Font
 

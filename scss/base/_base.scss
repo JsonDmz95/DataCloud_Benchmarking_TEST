@@ -31,6 +31,7 @@ p{
   color: $text-color;
   line-height: 1.3;
   word-wrap: break-word;
+  font-weight: 400;
 }
 
 /// Basic styles for links
@@ -59,11 +60,7 @@ a{
 }
 
 /// Hide location dropdown for development
-@if $hide-dropdown {
-  .hide-for-build-development{
-    display: none;
-  }
-}
+
 
 @media (min-width: 768px) {
 
