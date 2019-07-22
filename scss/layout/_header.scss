@@ -1,4 +1,9 @@
 header{
+    background-color: #CFCFCF;
+    background-image: url("../img/city-bg.png");
+    background-size: cover;
+    background-position: center top;
+    position: relative;
     .navbar{
         padding: 0px;
         .navbar-toggler{
@@ -26,11 +31,11 @@ header{
                     opacity: 0;
                 }
                 &.top{
-                    transform: rotate(45deg);
+                    transform: rotate(225deg);
                     margin-bottom: -2px
                 }
                 &.bottom{
-                    transform: rotate(-45deg);
+                    transform: rotate(-225deg);
                     margin-top: -2px;
                 }
             }
@@ -62,6 +67,72 @@ header{
             &:focus{
                 outline: none;
             }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                padding: 15px 0px;
+
+                li{
+                    .nav-link{
+                        font-size: 14pt;
+                        font-weight: 900;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        text-transform: capitalize;
+
+                        color: rgba(18, 28, 78, 0.5);
+                    }
+
+                    &.active{
+                        .nav-link{
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .info-toggle{
+        background: $tint-blue;
+        border: none;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: auto;
+        left: auto;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+
+        &:focus{
+            outline: none;
+        }
+        .fas{
+            font-size: 30px;
+            color: $white;
+            line-height: 1;
+            transform: rotate(360deg);
+            transform-origin: center;
+            transition: all ease 0.5s;
+        }
+
+        &.collapsed{
+            .fas{
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    .text-container{
+        padding: 30px 15px 200px 15px;
+
+        .info-title{
+            font-size: 24pt;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: $blue;
         }
     }
 }
