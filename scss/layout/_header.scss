@@ -1,8 +1,8 @@
 header{
     background-color: #CFCFCF;
     background-image: url("../img/city-bg.png");
-    background-size: cover;
-    background-position: center top;
+    // background-size: cover;
+    background-position: 29% 21%;
     position: relative;
     .navbar{
         padding: 0px;
@@ -70,22 +70,23 @@ header{
         }
         .navbar-collapse{
             .navbar-nav{
-                padding: 15px 0px;
+                padding: 30px 0px 50px 0px;
 
                 li{
                     .nav-link{
                         font-size: 14pt;
-                        font-weight: 900;
+                        font-weight: 500;
                         padding-left: 15px;
                         padding-right: 15px;
                         text-transform: capitalize;
 
-                        color: rgba(18, 28, 78, 0.5);
+                        color: $blue;
                     }
 
                     &.active{
                         .nav-link{
                             color: $blue;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -134,5 +135,104 @@ header{
             margin-bottom: 20px;
             color: $blue;
         }
+
+        .info-text{
+            max-width: 610px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header{
+        height: 100vh;
+        width: 25vw;
+        position: fixed;
+        left: 0px;
+        right: auto;
+        top: 0px;
+        bottom: 0px;
+        background-size: cover;
+        background-position: 5% 100%;
+        transition: all ease 0.5s;
+        animation: bgMoving infinite 30s;
+
+        .navbar-toggler{
+            position: fixed;
+            z-index: 10;
+            top: 0px;
+            bottom: auto;
+            left: 0px;
+            right: auto;
+        }
+
+        .navbar{
+            .navbar-collapse{
+                position: fixed;
+                z-index: 5;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                background: $tint-blue;
+                height: 100% !important;
+                transform: scale(0);
+                transform-origin: top left;
+                transition: all ease 0.5s;
+
+                ul.navbar-nav{
+                    opacity: 0;
+                    transition: all ease 0.5s 0.5s;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    transition: all ease 0.5s 0.5s;
+
+                    li{
+                        .nav-link{
+                            font-size: 30pt;
+                            color: $white;
+                            letter-spacing: letter-spacing(30pt, 50)
+                        }
+
+                        &.active{
+                            .nav-link{
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
+                &.show{
+                    transform: scale(1);
+
+                    ul{
+                        opacity: 1;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    #additionalInfo{
+        display: block;
+        padding-top: 70px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    header{
+        width: 217pt;
+    }
+
+    #additionalInfo{
+        padding: 90pt 25px 0pt 25px;
     }
 }

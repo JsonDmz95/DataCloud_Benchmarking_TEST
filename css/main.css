@@ -190,8 +190,7 @@ ul.aligned-list {
 header {
   background-color: #CFCFCF;
   background-image: url("../img/city-bg.png");
-  background-size: cover;
-  background-position: center top;
+  background-position: 29% 21%;
   position: relative;
 }
 
@@ -280,25 +279,26 @@ header .navbar .navbar-toggler:focus {
 
 /* line 72, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .navbar .navbar-collapse .navbar-nav {
-  padding: 15px 0px;
+  padding: 30px 0px 50px 0px;
 }
 
 /* line 76, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .navbar .navbar-collapse .navbar-nav li .nav-link {
   font-size: 14pt;
-  font-weight: 900;
+  font-weight: 500;
   padding-left: 15px;
   padding-right: 15px;
   text-transform: capitalize;
-  color: rgba(18, 28, 78, 0.5);
+  color: #121C4E;
 }
 
 /* line 87, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .navbar .navbar-collapse .navbar-nav li.active .nav-link {
   color: #121C4E;
+  text-decoration: underline;
 }
 
-/* line 96, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 97, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .info-toggle {
   background: #1F347F;
   border: none;
@@ -313,12 +313,12 @@ header .info-toggle {
   align-items: center;
 }
 
-/* line 109, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 110, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .info-toggle:focus {
   outline: none;
 }
 
-/* line 112, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 113, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .info-toggle .fas {
   font-size: 30px;
   color: #fff;
@@ -328,22 +328,116 @@ header .info-toggle .fas {
   transition: all ease 0.5s;
 }
 
-/* line 122, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 123, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .info-toggle.collapsed .fas {
   transform: rotate(0deg);
 }
 
-/* line 128, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 129, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .text-container {
   padding: 30px 15px 200px 15px;
 }
 
-/* line 131, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 132, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
 header .text-container .info-title {
   font-size: 24pt;
   font-weight: 300;
   margin-bottom: 20px;
   color: #121C4E;
+}
+
+/* line 139, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+header .text-container .info-text {
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 148, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header {
+    height: 100vh;
+    width: 25vw;
+    position: fixed;
+    left: 0px;
+    right: auto;
+    top: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-position: 5% 100%;
+    transition: all ease 0.5s;
+    animation: bgMoving infinite 30s;
+  }
+  /* line 161, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header .navbar-toggler {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    bottom: auto;
+    left: 0px;
+    right: auto;
+  }
+  /* line 171, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header .navbar .navbar-collapse {
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #1F347F;
+    height: 100% !important;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: all ease 0.5s;
+  }
+  /* line 184, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header .navbar .navbar-collapse ul.navbar-nav {
+    opacity: 0;
+    transition: all ease 0.5s 0.5s;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all ease 0.5s 0.5s;
+  }
+  /* line 196, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header .navbar .navbar-collapse ul.navbar-nav li .nav-link {
+    font-size: 30pt;
+    color: #fff;
+    letter-spacing: 1.5pt;
+  }
+  /* line 203, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header .navbar .navbar-collapse ul.navbar-nav li.active .nav-link {
+    color: #fff;
+  }
+  /* line 210, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header .navbar .navbar-collapse.show {
+    transform: scale(1);
+  }
+  /* line 213, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header .navbar .navbar-collapse.show ul {
+    opacity: 1;
+  }
+  /* line 223, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  #additionalInfo {
+    display: block;
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 231, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  header {
+    width: 217pt;
+  }
+  /* line 235, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  #additionalInfo {
+    padding: 90pt 25px 0pt 25px;
+  }
 }
 
 /* line 35, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/components/_button.scss */
@@ -406,10 +500,24 @@ header .text-container .info-title {
 body {
   background-color: #F2F2F2;
   background-image: url("../img/main-bg.svg");
-  background-size: auto;
+  background-size: cover;
   background-repeat: repeat;
-  min-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  /* line 11, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/pages/_home.scss */
+  .main-content {
+    padding-left: 25vw;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 17, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/pages/_home.scss */
+  .main-content {
+    padding-left: 217pt;
+  }
 }
 
 @keyframes barTop {
@@ -463,6 +571,54 @@ body {
   }
   100% {
     width: 40px;
+  }
+}
+
+@keyframes bgMoving {
+  0% {
+    background-position: 5% 100%;
+  }
+  7% {
+    background-position: 54% 100%;
+  }
+  14% {
+    background-position: 52% 100%;
+  }
+  21% {
+    background-position: 55% 100%;
+  }
+  28% {
+    background-position: 56% 100%;
+  }
+  35% {
+    background-position: 80% 100%;
+  }
+  42% {
+    background-position: 100% 100%;
+  }
+  49% {
+    background-position: 80% 100%;
+  }
+  56% {
+    background-position: 56% 100%;
+  }
+  63% {
+    background-position: 55% 100%;
+  }
+  70% {
+    background-position: 52% 100%;
+  }
+  77% {
+    background-position: 54% 100%;
+  }
+  84% {
+    background-position: 5% 100%;
+  }
+  91% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 5% 100%;
   }
 }
 

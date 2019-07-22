@@ -1,8 +1,20 @@
 body{
     background-color: #F2F2F2;
     background-image: url("../img/main-bg.svg");
-    background-size: auto;
+    background-size: cover;
     background-repeat: repeat;
-    min-width: 100vw;
+    width: 100vw;
     min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .main-content{
+        padding-left: 25vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-content{
+        padding-left: 217pt;
+    }
 }
