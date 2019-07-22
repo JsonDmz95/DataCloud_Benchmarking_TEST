@@ -3,13 +3,35 @@ body{
     background-image: url("../img/main-bg.svg");
     background-size: cover;
     background-repeat: repeat;
-    width: 100vw;
-    min-height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
+
+}
+
+.main-content{
+    padding-top: 40px;
+
+    .tagline-container{
+        .tagline{
+            margin-top: 0px;
+            text-align: center;
+            font-family: $secondary-font;
+            font-size: 40pt;
+
+        }
+    }
 }
 
 @media (min-width: 768px) {
     .main-content{
         padding-left: 25vw;
+
+        .tagline-container{
+            .tagline{
+                font-size: 50pt;
+
+            }
+        }
     }
 }
 
