@@ -48,7 +48,7 @@
   font-style: normal;
 }
 
-/* line 5, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 5, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_base.scss */
 body {
   background-color: #fff;
   font-family: "TaubSans", times, "Open Sans", sans-serif;
@@ -60,7 +60,7 @@ body {
   line-height: 1.25;
 }
 
-/* line 16, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 16, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_base.scss */
 h1,
 h2,
 h3,
@@ -72,7 +72,7 @@ h5 {
   text-transform: none;
 }
 
-/* line 28, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 28, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_base.scss */
 p {
   color: #222222;
   line-height: 1.25;
@@ -80,7 +80,7 @@ p {
   font-weight: 300;
 }
 
-/* line 36, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 36, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_base.scss */
 a {
   color: #F2635D;
   line-height: 1.3;
@@ -89,79 +89,79 @@ a {
   transition: all 0.3s ease;
 }
 
-/* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
+/* line 18, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/abstracts/_mixins.scss */
 a:hover, a:active, a:focus {
   color: #F2635D;
   text-decoration: underline;
 }
 
-/* line 50, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 50, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_base.scss */
 ::-moz-selection {
   background: #121C4E;
   color: #fff;
 }
 
-/* line 55, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_base.scss */
+/* line 55, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_base.scss */
 ::selection {
   background: #121C4E;
   color: #fff;
 }
 
-/* line 6, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 6, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 .clearfix::after {
   clear: both;
   content: '';
   display: table;
 }
 
-/* line 13, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 13, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 .text-white {
   color: #fff;
 }
 
-/* line 17, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 17, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 .full-wd {
   width: 100%;
 }
 
-/* line 21, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 21, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 .no-margin {
   margin: 0px;
 }
 
-/* line 25, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 25, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 .no-padding {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 31, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 31, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 .visible-full-hd {
   display: none !important;
 }
 
-/* line 36, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 36, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 .no-break {
   white-space: nowrap;
 }
 
-/* line 41, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 41, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 img {
   margin: 0 auto;
 }
 
-/* line 46, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 46, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 video {
   width: 100%;
   display: block;
 }
 
-/* line 51, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 51, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 .aligned-text {
   text-align: center;
 }
 
-/* line 55, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+/* line 55, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
 ul.aligned-list {
   padding: 0px;
   list-style: none;
@@ -169,11 +169,11 @@ ul.aligned-list {
 }
 
 @media (min-width: 768px) {
-  /* line 70, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+  /* line 70, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
   .aligned-text {
     text-align: left;
   }
-  /* line 74, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/base/_helpers.scss */
+  /* line 74, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/base/_helpers.scss */
   ul.aligned-list {
     padding-left: 40px;
     list-style: disc;
@@ -181,20 +181,20 @@ ul.aligned-list {
   }
 }
 
-/* line 1, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 1, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header {
   background-color: #CFCFCF;
   background-image: url("../img/city-bg.png");
-  background-position: 29% 21%;
+  background-position: 30% 67%;
   position: relative;
 }
 
-/* line 7, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 7, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar {
   padding: 0px;
 }
 
-/* line 9, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 9, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler {
   background-color: #1F347F;
   padding: 15px 10px;
@@ -207,9 +207,10 @@ header .navbar .navbar-toggler {
   justify-content: center;
   align-items: flex-start;
   transition: all ease 0.3s;
+  z-index: 10;
 }
 
-/* line 22, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 23, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler .icon-bar {
   display: block;
   background: #fff;
@@ -218,43 +219,43 @@ header .navbar .navbar-toggler .icon-bar {
   transition: all ease 0.3s;
 }
 
-/* line 29, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 30, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler .icon-bar.middle {
   height: 0px;
   opacity: 0;
 }
 
-/* line 33, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 34, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler .icon-bar.top {
   transform: rotate(225deg);
   margin-bottom: -2px;
 }
 
-/* line 37, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 38, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler .icon-bar.bottom {
   transform: rotate(-225deg);
   margin-top: -2px;
 }
 
-/* line 44, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 45, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler.collapsed {
   justify-content: space-between;
 }
 
-/* line 47, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 48, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler.collapsed .icon-bar {
   transform: rotate(0deg);
   transform-origin: center;
   width: 40px;
 }
 
-/* line 51, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 52, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler.collapsed .icon-bar.top {
   width: 20px;
   animation: barTop infinite 5s;
 }
 
-/* line 55, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 56, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler.collapsed .icon-bar.middle {
   width: 30px;
   height: 4px;
@@ -262,38 +263,105 @@ header .navbar .navbar-toggler.collapsed .icon-bar.middle {
   animation: barMiddle infinite 5s;
 }
 
-/* line 61, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 62, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler.collapsed .icon-bar.bottom {
   animation: barBottom infinite 5s;
 }
 
-/* line 67, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 68, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .navbar .navbar-toggler:focus {
   outline: none;
 }
 
-/* line 72, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-header .navbar .navbar-collapse .navbar-nav {
-  padding: 30px 0px 50px 0px;
+/* line 72, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse {
+  position: fixed;
+  z-index: 5;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #1F347F;
+  height: 100% !important;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: all ease 0.5s;
 }
 
-/* line 76, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-header .navbar .navbar-collapse .navbar-nav li .nav-link {
-  font-size: 14pt;
+/* line 84, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse ul.navbar-nav {
+  padding: 30px 0px 30px 0px;
+  opacity: 0;
+  transition: all ease 0.5s 0.5s;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all ease 0.5s 0.5s;
+}
+
+/* line 98, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse ul.navbar-nav li .nav-link {
+  font-size: 30pt;
   font-weight: 500;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
   text-transform: capitalize;
-  color: #121C4E;
+  color: #fff;
+  letter-spacing: 1.5pt;
+  position: relative;
+  transition: all ease 0.5s;
 }
 
-/* line 87, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-header .navbar .navbar-collapse .navbar-nav li.active .nav-link {
-  color: #121C4E;
-  text-decoration: underline;
+/* line 109, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse ul.navbar-nav li .nav-link::after {
+  content: '';
+  height: 4px;
+  width: 0px;
+  background: #fff;
+  position: absolute;
+  bottom: -3px;
+  top: auto;
+  left: 50%;
+  right: auto;
+  transition: all ease 0.5s;
 }
 
-/* line 97, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 18, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/abstracts/_mixins.scss */
+header .navbar .navbar-collapse ul.navbar-nav li .nav-link:hover, header .navbar .navbar-collapse ul.navbar-nav li .nav-link:active, header .navbar .navbar-collapse ul.navbar-nav li .nav-link:focus {
+  color: #fff;
+}
+
+/* line 125, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse ul.navbar-nav li .nav-link:hover:after, header .navbar .navbar-collapse ul.navbar-nav li .nav-link:active:after, header .navbar .navbar-collapse ul.navbar-nav li .nav-link:focus:after {
+  width: 100%;
+  left: 0;
+}
+
+/* line 133, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse ul.navbar-nav li.active .nav-link {
+  color: #fff;
+}
+
+/* line 136, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse ul.navbar-nav li.active .nav-link:after {
+  width: 100%;
+  left: 0;
+}
+
+/* line 145, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse.show {
+  transform: scale(1);
+}
+
+/* line 148, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
+header .navbar .navbar-collapse.show ul {
+  opacity: 1;
+}
+
+/* line 156, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .info-toggle {
   background: #1F347F;
   border: none;
@@ -308,12 +376,12 @@ header .info-toggle {
   align-items: center;
 }
 
-/* line 110, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 170, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .info-toggle:focus {
   outline: none;
 }
 
-/* line 113, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 173, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .info-toggle .fas {
   font-size: 30px;
   color: #fff;
@@ -323,17 +391,17 @@ header .info-toggle .fas {
   transition: all ease 0.5s;
 }
 
-/* line 123, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 183, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .info-toggle.collapsed .fas {
   transform: rotate(0deg);
 }
 
-/* line 129, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 189, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .text-container {
   padding: 30px 15px 200px 15px;
 }
 
-/* line 132, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 192, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .text-container .info-title {
   font-size: 24pt;
   font-weight: 300;
@@ -341,7 +409,7 @@ header .text-container .info-title {
   color: #121C4E;
 }
 
-/* line 139, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+/* line 199, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
 header .text-container .info-text {
   max-width: 610px;
   margin-left: auto;
@@ -349,11 +417,12 @@ header .text-container .info-text {
 }
 
 @media (min-width: 768px) {
-  /* line 148, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  /* line 208, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
   header {
     height: 100vh;
     width: 25vw;
     position: fixed;
+    z-index: 1040;
     left: 0px;
     right: auto;
     top: 0px;
@@ -363,60 +432,7 @@ header .text-container .info-text {
     transition: all ease 0.5s;
     animation: bgMoving infinite 30s;
   }
-  /* line 161, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-  header .navbar-toggler {
-    position: fixed;
-    z-index: 10;
-    top: 0px;
-    bottom: auto;
-    left: 0px;
-    right: auto;
-  }
-  /* line 171, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-  header .navbar .navbar-collapse {
-    position: fixed;
-    z-index: 5;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background: #1F347F;
-    height: 100% !important;
-    transform: scale(0);
-    transform-origin: top left;
-    transition: all ease 0.5s;
-  }
-  /* line 184, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-  header .navbar .navbar-collapse ul.navbar-nav {
-    opacity: 0;
-    transition: all ease 0.5s 0.5s;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    transition: all ease 0.5s 0.5s;
-  }
-  /* line 196, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-  header .navbar .navbar-collapse ul.navbar-nav li .nav-link {
-    font-size: 30pt;
-    color: #fff;
-    letter-spacing: 1.5pt;
-  }
-  /* line 203, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-  header .navbar .navbar-collapse ul.navbar-nav li.active .nav-link {
-    color: #fff;
-  }
-  /* line 210, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-  header .navbar .navbar-collapse.show {
-    transform: scale(1);
-  }
-  /* line 213, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
-  header .navbar .navbar-collapse.show ul {
-    opacity: 1;
-  }
-  /* line 223, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  /* line 225, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
   #additionalInfo {
     display: block;
     padding-top: 70px;
@@ -425,17 +441,17 @@ header .text-container .info-text {
 }
 
 @media (min-width: 992px) {
-  /* line 231, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  /* line 233, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
   header {
     width: 217pt;
   }
-  /* line 235, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/layout/_header.scss */
+  /* line 237, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
   #additionalInfo {
-    padding: 90pt 25px 0pt 25px;
+    padding: 30px 25px 0pt 25px;
   }
 }
 
-/* line 35, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/components/_button.scss */
+/* line 35, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/components/_button.scss */
 .primary-button, .btn-default, .btn-general {
   background-color: #F2635D;
   color: #fff;
@@ -456,14 +472,14 @@ header .text-container .info-text {
   word-wrap: break-word;
 }
 
-/* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
+/* line 18, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/abstracts/_mixins.scss */
 .primary-button:hover, .primary-button:active, .primary-button:focus, .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-general:hover, .btn-general:active, .btn-general:focus {
   color: #fff;
   background-color: #ce544f;
   text-decoration: none;
 }
 
-/* line 39, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/components/_button.scss */
+/* line 39, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/components/_button.scss */
 .primary-button.active.focus, .primary-button.active:focus, .primary-button.active:hover, .primary-button:active.focus, .primary-button:active:focus, .primary-button:active:hover, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .btn-general.active.focus, .btn-general.active:focus, .btn-general.active:hover, .btn-general:active.focus, .btn-general:active:focus, .btn-general:active:hover {
   background-color: #F2635D;
   color: #fff;
@@ -484,14 +500,14 @@ header .text-container .info-text {
   word-wrap: break-word;
 }
 
-/* line 18, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/abstracts/_mixins.scss */
+/* line 18, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/abstracts/_mixins.scss */
 .primary-button.active.focus:hover, .primary-button.active.focus:active, .primary-button.active.focus:focus, .primary-button.active:focus:hover, .primary-button.active:focus:active, .primary-button.active:focus:focus, .primary-button.active:hover:hover, .primary-button.active:hover:active, .primary-button.active:hover:focus, .primary-button:active.focus:hover, .primary-button:active.focus:active, .primary-button:active.focus:focus, .primary-button:active:focus:hover, .primary-button:active:focus:active, .primary-button:active:focus:focus, .primary-button:active:hover:hover, .primary-button:active:hover:active, .primary-button:active:hover:focus, .btn-default.active.focus:hover, .btn-default.active.focus:active, .btn-default.active.focus:focus, .btn-default.active:focus:hover, .btn-default.active:focus:active, .btn-default.active:focus:focus, .btn-default.active:hover:hover, .btn-default.active:hover:active, .btn-default.active:hover:focus, .btn-default:active.focus:hover, .btn-default:active.focus:active, .btn-default:active.focus:focus, .btn-default:active:focus:hover, .btn-default:active:focus:active, .btn-default:active:focus:focus, .btn-default:active:hover:hover, .btn-default:active:hover:active, .btn-default:active:hover:focus, .btn-general.active.focus:hover, .btn-general.active.focus:active, .btn-general.active.focus:focus, .btn-general.active:focus:hover, .btn-general.active:focus:active, .btn-general.active:focus:focus, .btn-general.active:hover:hover, .btn-general.active:hover:active, .btn-general.active:hover:focus, .btn-general:active.focus:hover, .btn-general:active.focus:active, .btn-general:active.focus:focus, .btn-general:active:focus:hover, .btn-general:active:focus:active, .btn-general:active:focus:focus, .btn-general:active:hover:hover, .btn-general:active:hover:active, .btn-general:active:hover:focus {
   color: #fff;
   background-color: #ce544f;
   text-decoration: none;
 }
 
-/* line 1, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/pages/_home.scss */
+/* line 3, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 body {
   background-color: #F2F2F2;
   background-image: url("../img/main-bg.svg");
@@ -499,34 +515,135 @@ body {
   background-repeat: repeat;
 }
 
-/* line 11, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/pages/_home.scss */
+/* line 13, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .main-content {
   padding-top: 40px;
+  padding-bottom: 40pt;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-/* line 15, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/pages/_home.scss */
+/* line 20, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .main-content .tagline-container .tagline {
   margin-top: 0px;
   text-align: center;
   font-family: "TaubDisplay", times, sans-serif;
   font-size: 40pt;
+  margin-bottom: 150px;
+  transition: all ease 0.3s;
+}
+
+/* line 27, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.main-content .tagline-container .tagline span {
+  transition: all ease 0.3s;
+}
+
+/* line 34, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container {
+  position: relative;
+}
+
+/* line 37, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container .circles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 45, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container .circles:before {
+  content: '';
+  display: block;
+  height: 300pt;
+  width: 300pt;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 150pt);
+  bottom: auto;
+  left: calc(50% - 150pt);
+  right: auto;
+  background: #1F347F;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* line 61, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container .circles:after {
+  content: '';
+  display: block;
+  height: 270pt;
+  width: 270pt;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 135pt);
+  bottom: auto;
+  left: calc(50% - 135pt);
+  right: auto;
+  background: #1F347F;
+  z-index: 2;
+}
+
+/* line 76, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container .phone {
+  width: 166pt;
+  height: 365pt;
+  border-radius: 20pt;
+  background-color: transparent;
+  background-size: cover;
+  box-shadow: 15px 15px 35px rgba(8, 49, 68, 0.3);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+  padding: 20pt 11pt 13pt 11pt;
+}
+
+/* line 90, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container .phone ::-moz-selection {
+  background: transparent;
+}
+
+/* line 94, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container .phone ::selection {
+  background: transparent;
+}
+
+/* line 99, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container .phone .phone-frame {
+  width: 170pt;
+  position: absolute;
+  top: 0px;
+  left: -2pt;
+  bottom: auto;
+  right: auto;
+  z-index: 1;
+}
+
+/* line 109, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container .phone .phone-content {
+  z-index: 2;
+  position: relative;
 }
 
 @media (min-width: 768px) {
-  /* line 26, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/pages/_home.scss */
+  /* line 121, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
   .main-content {
     padding-left: 25vw;
-  }
-  /* line 30, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/pages/_home.scss */
-  .main-content .tagline-container .tagline {
-    font-size: 50pt;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 39, D:/ASUS/DEVotion/OneDrive_2019-07-20/Jason Lopez Dominquez/datacloud_new/scss/pages/_home.scss */
+  /* line 129, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
   .main-content {
     padding-left: 217pt;
+  }
+  /* line 133, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .main-content .tagline-container .tagline {
+    font-size: 50pt;
   }
 }
 
@@ -630,6 +747,98 @@ body {
   100% {
     background-position: 5% 100%;
   }
+}
+
+/*CLASES*/
+/* line 106, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated {
+  transition: all ease 1s;
+}
+
+/* line 108, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity {
+  opacity: 0;
+}
+
+/* line 110, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity.in {
+  opacity: 1;
+}
+
+/* line 115, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-up {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* line 119, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-up.in {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* line 125, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-arrow {
+  opacity: 0;
+  transform: translateY(-50px) rotate(90deg);
+}
+
+/* line 129, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-arrow.in {
+  opacity: 1;
+  transform: translateY(0px) rotate(90deg);
+}
+
+/* line 135, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-down {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+/* line 139, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-down.in {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* line 145, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-right {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+/* line 149, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-right.in {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* line 155, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-left {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+/* line 159, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.opacity-left.in {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* line 165, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.scale {
+  transform: scale(0);
+}
+
+/* line 167, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.scale.in {
+  transform: scale(1);
+}
+
+/* line 171, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.scale.uni-view {
+  transform-origin: center;
+  transition: all ease 0.5s;
 }
 
 /*# sourceMappingURL=../css/main.map */

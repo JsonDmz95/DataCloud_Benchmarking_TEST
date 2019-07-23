@@ -2,7 +2,7 @@ header{
     background-color: #CFCFCF;
     background-image: url("../img/city-bg.png");
     // background-size: cover;
-    background-position: 29% 21%;
+    background-position: 30% 67%;
     position: relative;
     .navbar{
         padding: 0px;
@@ -18,6 +18,7 @@ header{
             justify-content: center;
             align-items: flex-start;
             transition: all ease 0.3s;
+            z-index: 10;
 
             .icon-bar{
                 display: block;
@@ -69,26 +70,84 @@ header{
             }
         }
         .navbar-collapse{
-            .navbar-nav{
-                padding: 30px 0px 50px 0px;
+            position: fixed;
+            z-index: 5;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background: $tint-blue;
+            height: 100% !important;
+            transform: scale(0);
+            transform-origin: top left;
+            transition: all ease 0.5s;
+            ul.navbar-nav{
+                padding: 30px 0px 30px 0px;
+                opacity: 0;
+                transition: all ease 0.5s 0.5s;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                transition: all ease 0.5s 0.5s;
+
 
                 li{
                     .nav-link{
-                        font-size: 14pt;
+                        font-size: 30pt;
                         font-weight: 500;
-                        padding-left: 15px;
-                        padding-right: 15px;
+                        padding-left: 0px;
+                        padding-right: 0px;
                         text-transform: capitalize;
+                        color: $white;
+                        letter-spacing: letter-spacing(30pt, 50);
+                        position: relative;
+                        transition: all ease 0.5s;
 
-                        color: $blue;
+                        &::after{
+                            content: '';
+                            height: 4px;
+                            width: 0px;
+                            background: $white;
+                            position: absolute;
+                            bottom: -3px;
+                            top: auto;
+                            left: 50%;
+                            right: auto;
+                            transition: all ease 0.5s;
+                        }
+
+                        @include on-event{
+                            color: $white;
+
+                            &:after{
+                                width: 100%;
+                                left: 0;
+                            }
+                        }
                     }
 
                     &.active{
                         .nav-link{
-                            color: $blue;
-                            text-decoration: underline;
+                            color: $white;
+
+                            &:after{
+                                width: 100%;
+                                left: 0;
+                            }
                         }
                     }
+                }
+            }
+
+            &.show{
+                transform: scale(1);
+
+                ul{
+                    opacity: 1;
+
                 }
             }
         }
@@ -106,6 +165,7 @@ header{
         width: 60px;
         justify-content: center;
         align-items: center;
+
 
         &:focus{
             outline: none;
@@ -149,6 +209,7 @@ header{
         height: 100vh;
         width: 25vw;
         position: fixed;
+        z-index: 1040;
         left: 0px;
         right: auto;
         top: 0px;
@@ -158,65 +219,6 @@ header{
         transition: all ease 0.5s;
         animation: bgMoving infinite 30s;
 
-        .navbar-toggler{
-            position: fixed;
-            z-index: 10;
-            top: 0px;
-            bottom: auto;
-            left: 0px;
-            right: auto;
-        }
-
-        .navbar{
-            .navbar-collapse{
-                position: fixed;
-                z-index: 5;
-                top: 0px;
-                bottom: 0px;
-                left: 0px;
-                right: 0px;
-                background: $tint-blue;
-                height: 100% !important;
-                transform: scale(0);
-                transform-origin: top left;
-                transition: all ease 0.5s;
-
-                ul.navbar-nav{
-                    opacity: 0;
-                    transition: all ease 0.5s 0.5s;
-                    height: 100%;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-                    transition: all ease 0.5s 0.5s;
-
-                    li{
-                        .nav-link{
-                            font-size: 30pt;
-                            color: $white;
-                            letter-spacing: letter-spacing(30pt, 50)
-                        }
-
-                        &.active{
-                            .nav-link{
-                                color: $white;
-                            }
-                        }
-                    }
-                }
-
-                &.show{
-                    transform: scale(1);
-
-                    ul{
-                        opacity: 1;
-
-                    }
-                }
-            }
-        }
 
     }
 
@@ -233,6 +235,6 @@ header{
     }
 
     #additionalInfo{
-        padding: 90pt 25px 0pt 25px;
+        padding: 30px 25px 0pt 25px;
     }
 }
