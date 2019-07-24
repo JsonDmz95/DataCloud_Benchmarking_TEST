@@ -435,7 +435,7 @@ header .text-container .info-text {
   /* line 225, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/layout/_header.scss */
   #additionalInfo {
     display: block;
-    padding-top: 70px;
+    padding-top: 35px;
     padding-bottom: 0px;
   }
 }
@@ -517,33 +517,42 @@ body {
 
 /* line 13, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .main-content {
+  min-height: 100vh;
   padding-top: 40px;
   padding-bottom: 40pt;
   max-width: 100%;
   overflow: hidden;
+  text-align: center;
+  position: relative;
 }
 
-/* line 20, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 23, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .main-content .tagline-container .tagline {
   margin-top: 0px;
   text-align: center;
   font-family: "TaubDisplay", times, sans-serif;
   font-size: 40pt;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   transition: all ease 0.3s;
 }
 
-/* line 27, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 30, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .main-content .tagline-container .tagline span {
   transition: all ease 0.3s;
 }
 
-/* line 34, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
-.phone-container {
+/* line 36, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.main-content .center-content {
   position: relative;
 }
 
-/* line 37, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 41, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.phone-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 45, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .phone-container .circles {
   position: absolute;
   top: 0;
@@ -554,7 +563,7 @@ body {
   height: 100%;
 }
 
-/* line 45, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 53, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .phone-container .circles:before {
   content: '';
   display: block;
@@ -571,7 +580,7 @@ body {
   z-index: 1;
 }
 
-/* line 61, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 69, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .phone-container .circles:after {
   content: '';
   display: block;
@@ -587,7 +596,7 @@ body {
   z-index: 2;
 }
 
-/* line 76, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 84, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .phone-container .phone {
   width: 166pt;
   height: 365pt;
@@ -602,17 +611,17 @@ body {
   padding: 20pt 11pt 13pt 11pt;
 }
 
-/* line 90, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 98, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .phone-container .phone ::-moz-selection {
   background: transparent;
 }
 
-/* line 94, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 102, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .phone-container .phone ::selection {
   background: transparent;
 }
 
-/* line 99, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 107, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .phone-container .phone .phone-frame {
   width: 170pt;
   position: absolute;
@@ -623,27 +632,296 @@ body {
   z-index: 1;
 }
 
-/* line 109, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+/* line 117, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
 .phone-container .phone .phone-content {
   z-index: 2;
   position: relative;
 }
 
+/* line 128, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* line 137, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container #animated-circle, .tabs-container #animated-dots {
+  display: none;
+}
+
+/* line 143, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler {
+  height: 50pt;
+  width: 50pt;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all ease 0.5s;
+  position: absolute;
+}
+
+/* line 157, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler#btn-executive {
+  bottom: -60pt;
+  left: calc((100vw - 320px)/2.5);
+  top: auto;
+  right: auto;
+}
+
+/* line 164, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler#btn-data {
+  top: -60pt;
+  left: calc((100vw - 320px)/2.5);
+  bottom: auto;
+  right: auto;
+}
+
+/* line 171, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler#btn-reporting {
+  top: -60pt;
+  right: calc((100vw - 320px)/2.5);
+  bottom: auto;
+  left: auto;
+}
+
+/* line 178, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler#btn-benchmarking {
+  bottom: -60pt;
+  right: calc((100vw - 320px)/2.5);
+  top: auto;
+  left: auto;
+}
+
+/* line 185, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler img {
+  height: 20pt;
+  position: relative;
+}
+
+/* line 191, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler::before {
+  content: '';
+  display: block;
+  background: #121C4E;
+  height: 42pt;
+  width: 42pt;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 21pt);
+  bottom: auto;
+  left: calc(50% - 21pt);
+  right: auto;
+  transition: all ease 0.5s;
+}
+
+/* line 208, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler::after {
+  content: '';
+  display: block;
+  background: transparent;
+  height: 51.5pt;
+  width: 51.5pt;
+  border: 1.5pt dashed #121C4E;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 25.75pt);
+  bottom: auto;
+  left: calc(50% - 25.75pt);
+  right: auto;
+  transition: all ease 0.5s;
+  transform: rotate(180deg);
+}
+
+/* line 228, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler:hover::before, .tabs-container .tabs .tab-toggler:active::before, .tabs-container .tabs .tab-toggler:focus::before {
+  background: #1F347F;
+}
+
+/* line 231, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+.tabs-container .tabs .tab-toggler:hover::after, .tabs-container .tabs .tab-toggler:active::after, .tabs-container .tabs .tab-toggler:focus::after {
+  border-color: #1F347F;
+  transform: rotate(0deg);
+}
+
+@media (max-width: 767.9px) {
+  /* line 241, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  #animated-circle, #animated-dots {
+    display: none !important;
+  }
+}
+
 @media (min-width: 768px) {
-  /* line 121, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  /* line 247, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
   .main-content {
     padding-left: 25vw;
+  }
+  /* line 251, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .phone-container {
+    transform: scale(0.7);
+  }
+  /* line 255, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container {
+    width: 500px;
+    height: 500px;
+    top: 0px;
+    bottom: 0px;
+    left: calc(50% - 250px);
+    right: auto;
+    padding: 15pt;
+  }
+  /* line 267, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container #animated-circle, .tabs-container #animated-dots {
+    display: block;
+  }
+  /* line 272, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container #animated-dots {
+    position: absolute;
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    left: 0px;
+    right: auto;
+  }
+  /* line 285, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler {
+    height: 60pt;
+    width: 60pt;
+  }
+  /* line 289, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler#btn-executive {
+    bottom: -13pt;
+    left: calc(50% - 30pt);
+  }
+  /* line 294, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler#btn-data {
+    top: calc(50% - 30pt);
+    left: -13pt;
+    bottom: auto;
+    right: auto;
+  }
+  /* line 301, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler#btn-reporting {
+    top: -13pt;
+    left: calc(50% - 30pt);
+    bottom: auto;
+    right: auto;
+  }
+  /* line 308, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler#btn-benchmarking {
+    top: calc(50% - 30pt);
+    right: -13pt;
+    bottom: auto;
+    left: auto;
+  }
+  /* line 315, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler img {
+    height: 24pt;
+    position: relative;
+  }
+  /* line 320, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler::before {
+    height: 50pt;
+    width: 50pt;
+    top: calc(50% - 25pt);
+    left: calc(50% - 25pt);
+  }
+  /* line 328, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler::after {
+    height: 61.5pt;
+    width: 61.5pt;
+    top: calc(50% - 30.75pt);
+    left: calc(50% - 30.75pt);
   }
 }
 
 @media (min-width: 992px) {
-  /* line 129, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  /* line 340, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
   .main-content {
     padding-left: 217pt;
   }
-  /* line 133, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  /* line 344, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
   .main-content .tagline-container .tagline {
     font-size: 50pt;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 355, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .main-content .tagline-container .tagline {
+    margin-bottom: 100pt;
+  }
+  /* line 360, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .phone-container {
+    transform: scale(1);
+  }
+  /* line 364, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container {
+    width: 520pt;
+    height: 520pt;
+    left: calc(50% - 260pt);
+    top: calc(50% - 260pt);
+  }
+  /* line 371, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container #animated-circle {
+    display: none;
+  }
+  /* line 378, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler {
+    height: 60pt;
+    width: 60pt;
+  }
+  /* line 382, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler#btn-executive {
+    bottom: -13pt;
+    left: calc(50% - 30pt);
+  }
+  /* line 387, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler#btn-data {
+    top: calc(50% - 30pt);
+    left: -13pt;
+    bottom: auto;
+    right: auto;
+  }
+  /* line 394, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler#btn-reporting {
+    top: -13pt;
+    left: calc(50% - 30pt);
+    bottom: auto;
+    right: auto;
+  }
+  /* line 401, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler#btn-benchmarking {
+    top: calc(50% - 30pt);
+    right: -13pt;
+    bottom: auto;
+    left: auto;
+  }
+  /* line 408, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler img {
+    height: 24pt;
+    position: relative;
+  }
+  /* line 413, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler::before {
+    height: 50pt;
+    width: 50pt;
+    top: calc(50% - 25pt);
+    left: calc(50% - 25pt);
+  }
+  /* line 421, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/pages/_home.scss */
+  .tabs-container .tabs .tab-toggler::after {
+    height: 61.5pt;
+    width: 61.5pt;
+    top: calc(50% - 30.75pt);
+    left: calc(50% - 30.75pt);
   }
 }
 
@@ -768,7 +1046,7 @@ body {
 /* line 115, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
 .animated.opacity-up {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(20px);
 }
 
 /* line 119, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
@@ -780,7 +1058,7 @@ body {
 /* line 125, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
 .animated.opacity-arrow {
   opacity: 0;
-  transform: translateY(-50px) rotate(90deg);
+  transform: translateY(-20px) rotate(90deg);
 }
 
 /* line 129, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
@@ -792,7 +1070,7 @@ body {
 /* line 135, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
 .animated.opacity-down {
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-20px);
 }
 
 /* line 139, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
@@ -804,7 +1082,7 @@ body {
 /* line 145, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
 .animated.opacity-right {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-20px);
 }
 
 /* line 149, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
@@ -816,7 +1094,7 @@ body {
 /* line 155, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
 .animated.opacity-left {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(20px);
 }
 
 /* line 159, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
@@ -827,18 +1105,32 @@ body {
 
 /* line 165, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
 .animated.scale {
-  transform: scale(0);
+  transform: scale(0.7);
+  opacity: 0;
 }
 
-/* line 167, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+/* line 168, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
 .animated.scale.in {
   transform: scale(1);
+  opacity: 1;
 }
 
-/* line 171, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+/* line 173, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
 .animated.scale.uni-view {
   transform-origin: center;
   transition: all ease 0.5s;
+}
+
+/* line 179, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.dots {
+  transform-origin: center center;
+  opacity: 0;
+  transition: all ease 1s;
+}
+
+/* line 185, Z:/Jeeson Lopez/DataCloud_Benchmarking_TEST-master/DataCloud_Benchmarking_TEST-master/scss/animations/_animations.scss */
+.animated.dots.in {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=../css/main.map */

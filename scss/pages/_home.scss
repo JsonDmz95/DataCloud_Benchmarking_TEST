@@ -11,10 +11,13 @@ body{
 }
 
 .main-content{
+    min-height: 100vh;
     padding-top: 40px;
     padding-bottom: 40pt;
     max-width: 100%;
     overflow: hidden;
+    text-align: center;
+    position: relative;
 
     .tagline-container{
         .tagline{
@@ -22,17 +25,22 @@ body{
             text-align: center;
             font-family: $secondary-font;
             font-size: 40pt;
-            margin-bottom: 150px;
+            margin-bottom: 100px;
             transition: all ease 0.3s;
             span{
                 transition: all ease 0.3s;
             }
         }
     }
+
+    .center-content{
+        position: relative;
+    }
 }
 
 .phone-container{
     position: relative;
+    display: inline-block;
 
     .circles{
         position: absolute;
@@ -88,12 +96,12 @@ body{
         padding: 20pt 11pt 13pt 11pt;
 
         ::-moz-selection{
-          background: transparent;
+            background: transparent;
         }
 
         ::selection{
-          background: transparent;
-          // color: $white;
+            background: transparent;
+            // color: $white;
         }
 
         .phone-frame{
@@ -117,11 +125,214 @@ body{
 
 }
 
+.tabs-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;;
+    left: 0px;
+    right: 0px;
+
+    #animated-circle, #animated-dots{
+        display: none;
+    }
+
+    .tabs{
+
+        .tab-toggler{
+            // height: 60pt;
+            // width: 60pt;
+            height: 50pt;
+            width: 50pt;
+            background: $white;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: all ease 0.5s;
+            position: absolute;
+
+            &#btn-executive{
+                bottom: -60pt;
+                left: calc((100vw - 320px)/2.5);
+                top: auto;
+                right: auto;
+            }
+
+            &#btn-data{
+                top: -60pt;
+                left: calc((100vw - 320px)/2.5);
+                bottom: auto;
+                right: auto;
+            }
+
+            &#btn-reporting{
+                top: -60pt;
+                right: calc((100vw - 320px)/2.5);
+                bottom: auto;
+                left: auto;
+            }
+
+            &#btn-benchmarking{
+                bottom: -60pt;
+                right: calc((100vw - 320px)/2.5);
+                top: auto;
+                left: auto;
+            }
+
+            img{
+                // height: 24pt;
+                height: 20pt;
+                position: relative;
+            }
+
+            &::before{
+                content: '';
+                display: block;
+                background: $blue;
+                // height: 50pt;
+                // width: 50pt;
+                height: 42pt;
+                width: 42pt;
+                border-radius: 100%;
+                position: absolute;
+                top: calc(50% - 21pt);
+                bottom: auto;
+                left: calc(50% - 21pt);
+                right: auto;
+                transition: all ease 0.5s;
+            }
+
+            &::after{
+                content: '';
+                display: block;
+                background: transparent;
+                // height: 61.5pt;
+                // width: 61.5pt;
+                height: 51.5pt;
+                width: 51.5pt;
+                border: 1.5pt dashed $blue;
+                border-radius: 100%;
+                position: absolute;
+                top: calc(50% - 25.75pt);
+                bottom: auto;
+                left: calc(50% - 25.75pt);
+                right: auto;
+                transition: all ease 0.5s;
+                transform: rotate(180deg);
+            }
+
+            @include on-event{
+                &::before{
+                    background: $tint-blue;
+                }
+                &::after{
+                    border-color: $tint-blue;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.9px) {
+    #animated-circle, #animated-dots{
+        display: none !important;
+    }
+}
+
 @media (min-width: 768px) {
     .main-content{
         padding-left: 25vw;
+    }
+
+    .phone-container{
+        transform: scale(0.7);
+    }
+
+    .tabs-container{
+        // background: red;
+        // width: 520pt;
+        // height: 520pt;
+        width: 500px;
+        height: 500px;
+        top: 0px;
+        bottom: 0px;;
+        left: calc(50% - 250px);
+        right: auto;
+        padding: 15pt;
+
+        #animated-circle, #animated-dots{
+            // display: none;
+            display: block;
+        }
+
+        #animated-dots{
+            position: absolute;
+            // transform: scale(1.005);
+            position: absolute;
+            top: 0px;
+            bottom: auto;
+            left: 0px;
+            right: auto;
+        }
 
 
+        .tabs{
+
+            .tab-toggler{
+                height: 60pt;
+                width: 60pt;
+
+                &#btn-executive{
+                    bottom: -13pt;
+                    left: calc(50% - 30pt);
+                }
+
+                &#btn-data{
+                    top: calc(50% - 30pt);
+                    left: -13pt;
+                    bottom: auto;
+                    right: auto;
+                }
+
+                &#btn-reporting{
+                    top: -13pt;
+                    left: calc(50% - 30pt);
+                    bottom: auto;
+                    right: auto;
+                }
+
+                &#btn-benchmarking{
+                    top: calc(50% - 30pt);
+                    right: -13pt;
+                    bottom: auto;
+                    left: auto;
+                }
+
+                img{
+                    height: 24pt;
+                    position: relative;
+                }
+
+                &::before{
+                    height: 50pt;
+                    width: 50pt;
+                    top: calc(50% - 25pt);
+                    left: calc(50% - 25pt);
+
+                }
+
+                &::after{
+                    height: 61.5pt;
+                    width: 61.5pt;
+                    top: calc(50% - 30.75pt);
+                    left: calc(50% - 30.75pt);
+                }
+            }
+        }
     }
 }
 
@@ -133,6 +344,86 @@ body{
             .tagline{
                 font-size: 50pt;
 
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .main-content{
+
+        .tagline-container{
+            .tagline{
+                margin-bottom: 100pt;
+            }
+        }
+    }
+    .phone-container{
+        transform: scale(1);
+    }
+
+    .tabs-container{
+        // background: red;
+        width: 520pt;
+        height: 520pt;
+        left: calc(50% - 260pt);
+        top: calc(50% - 260pt);
+
+        #animated-circle{
+            display: none;
+        }
+
+
+        .tabs{
+
+            .tab-toggler{
+                height: 60pt;
+                width: 60pt;
+
+                &#btn-executive{
+                    bottom: -13pt;
+                    left: calc(50% - 30pt);
+                }
+
+                &#btn-data{
+                    top: calc(50% - 30pt);
+                    left: -13pt;
+                    bottom: auto;
+                    right: auto;
+                }
+
+                &#btn-reporting{
+                    top: -13pt;
+                    left: calc(50% - 30pt);
+                    bottom: auto;
+                    right: auto;
+                }
+
+                &#btn-benchmarking{
+                    top: calc(50% - 30pt);
+                    right: -13pt;
+                    bottom: auto;
+                    left: auto;
+                }
+
+                img{
+                    height: 24pt;
+                    position: relative;
+                }
+
+                &::before{
+                    height: 50pt;
+                    width: 50pt;
+                    top: calc(50% - 25pt);
+                    left: calc(50% - 25pt);
+
+                }
+
+                &::after{
+                    height: 61.5pt;
+                    width: 61.5pt;
+                    top: calc(50% - 30.75pt);
+                    left: calc(50% - 30.75pt);
+                }
             }
         }
     }
