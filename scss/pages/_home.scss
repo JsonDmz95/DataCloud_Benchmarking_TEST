@@ -12,7 +12,7 @@ body{
 
 .main-content{
     min-height: 100vh;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 40pt;
     max-width: 100%;
     overflow: hidden;
@@ -166,6 +166,11 @@ body{
                 left: calc((100vw - 320px)/2.5);
                 bottom: auto;
                 right: auto;
+
+                .toggler-title{
+                    top: auto;
+                    right: calc(100% + 20pt);
+                }
             }
 
             &#btn-reporting{
@@ -173,6 +178,11 @@ body{
                 right: calc((100vw - 320px)/2.5);
                 bottom: auto;
                 left: auto;
+
+                .toggler-title{
+                    top: auto;
+                    bottom: calc(100% + 20pt);
+                }
             }
 
             &#btn-benchmarking{
@@ -180,12 +190,31 @@ body{
                 right: calc((100vw - 320px)/2.5);
                 top: auto;
                 left: auto;
+
+                .toggler-title{
+                    top: auto;
+                    left: calc(100% + 20pt);
+                }
             }
 
             img{
                 // height: 24pt;
                 height: 20pt;
                 position: relative;
+            }
+
+            .toggler-title{
+                position: absolute;
+                top: calc(100% + 20px);
+                bottom: auto;
+                left: auto;
+                right: auto;
+                width: max-content;
+                font-size: 24pt;
+                font-weight: 900;
+                color: $blue;
+                text-align: center;
+
             }
 
             &::before{
@@ -225,6 +254,9 @@ body{
             }
 
             @include on-event{
+                .toggler-title{
+                    color: $tint-blue;
+                }
                 &::before{
                     background: $tint-blue;
                 }
@@ -264,13 +296,14 @@ body{
         right: auto;
         padding: 15pt;
 
-        #animated-circle, #animated-dots{
-            // display: none;
-            display: block;
+        #animated-circle{
+            display: none;
+            // display: block;
         }
 
         #animated-dots{
             position: absolute;
+            display: block;
             // transform: scale(1.005);
             position: absolute;
             top: 0px;
@@ -343,7 +376,7 @@ body{
         .tagline-container{
             .tagline{
                 font-size: 50pt;
-
+                line-height: 1;
             }
         }
     }
@@ -353,7 +386,7 @@ body{
 
         .tagline-container{
             .tagline{
-                margin-bottom: 100pt;
+                margin-bottom: 130pt;
             }
         }
     }
@@ -368,9 +401,7 @@ body{
         left: calc(50% - 260pt);
         top: calc(50% - 260pt);
 
-        #animated-circle{
-            display: none;
-        }
+
 
 
         .tabs{
@@ -424,6 +455,17 @@ body{
                     top: calc(50% - 30.75pt);
                     left: calc(50% - 30.75pt);
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 1550px) {
+    .main-content{
+
+        .tagline-container{
+            .tagline{
+                margin-bottom: 170pt;
             }
         }
     }

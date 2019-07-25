@@ -79,8 +79,10 @@ ul.aligned-list{
 
 }
 
-@media (min-width: 1920px) {
-
+@media (min-width: 1550px) {
+    .d-hd-block{
+        display: block !important;
+    }
 }
 
 /// Infinite animation from left to right
