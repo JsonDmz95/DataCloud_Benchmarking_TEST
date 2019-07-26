@@ -26,8 +26,10 @@ body{
             font-family: $secondary-font;
             font-size: 40pt;
             margin-bottom: 100px;
+            -webkit-transition: all ease 0.3s;
             transition: all ease 0.3s;
             span{
+                -webkit-transition: all ease 0.3s;
                 transition: all ease 0.3s;
             }
         }
@@ -92,6 +94,7 @@ body{
         background-color: transparent;
         // background-image: url("../img/phone-frame.png");
         background-size: cover;
+        -webkit-box-shadow: 15px 15px 35px rgba(8,49,68, 0.3);
         box-shadow: 15px 15px 35px rgba(8,49,68, 0.3);
         position: relative;
         margin-left: auto;
@@ -158,10 +161,17 @@ body{
             width: 50pt;
             background: $white;
             border-radius: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             position: relative;
+            -webkit-transition: all ease 0.5s;
             transition: all ease 0.5s;
             position: absolute;
 
@@ -221,11 +231,14 @@ body{
                 bottom: auto;
                 left: auto;
                 right: auto;
+                width: -webkit-max-content;
+                width: -moz-max-content;
                 width: max-content;
                 font-size: 24pt;
                 font-weight: 900;
                 color: $blue;
                 text-align: center;
+                -webkit-transform-origin: left center;
                 transform-origin: left center;
                 // transform: rotateY(0deg);
                 // opacity: 1;
@@ -245,6 +258,7 @@ body{
                 bottom: auto;
                 left: calc(50% - 21pt);
                 right: auto;
+                -webkit-transition: all ease 0.5s;
                 transition: all ease 0.5s;
                 z-index: 3;
             }
@@ -264,7 +278,9 @@ body{
                 bottom: auto;
                 left: calc(50% - 25.75pt);
                 right: auto;
+                -webkit-transition: all ease 0.5s;
                 transition: all ease 0.5s;
+                -webkit-transform: rotate(180deg);
                 transform: rotate(180deg);
                 z-index: 2;
             }
@@ -281,11 +297,24 @@ body{
                 background: transparent;
                 z-index: 1;
 
+                display: -webkit-box;
+
+                display: -ms-flexbox;
+
                 display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
                 flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
+                -webkit-transition: all ease 0.5s;
                 transition: all ease 0.5s;
+                -webkit-transform: scale(0.5);
                 transform: scale(0.5);
 
                 .explosion-dot{
@@ -299,6 +328,7 @@ body{
 
                     @for $i from 1 through 20{
                         &:nth-child(#{$i}) {
+                            -webkit-transform: rotate($deg) translate(30pt);
                             transform: rotate($deg) translate(30pt);
                         }
 
@@ -315,9 +345,12 @@ body{
                     right: 0px;
                     background: transparent;
                     border: 0px solid $blue;
+                    -webkit-transition: all ease 0.5s;
                     transition: all ease 0.5s;
                     border-radius: 100%;
+                    -webkit-transform: scale(0.8);
                     transform: scale(0.8);
+                    -webkit-transform-origin: center center;
                     transform-origin: center center;
                 }
             }
@@ -331,6 +364,7 @@ body{
                 }
                 &::after{
                     // border-color: $tint-blue;
+                    -webkit-transform: rotate(0deg);
                     transform: rotate(0deg);
                 }
             }
@@ -338,23 +372,29 @@ body{
             &.active{
 
                 img, &::before, &::after{
+                    -webkit-animation: explotion 1.5s 1;
                     animation: explotion 1.5s 1;
                 }
 
                 .toggler-title{
+                    -webkit-transform: rotateY(90deg);
                     transform: rotateY(90deg);
                     opacity: 0;
+                    -webkit-transition: all ease 1s 1s;
                     transition: all ease 1s 1s;
                 }
 
                 .explosion{
+                    -webkit-animation: explotionDots 0.4s 1.3s 1;
                     animation: explotionDots 0.4s 1.3s 1;
 
                     .explotionDot{
+                        -webkit-animation: explotionDot 0.4s 1.3s 1;
                         animation: explotionDot 0.4s 1.3s 1;
                     }
 
                     .explosion-circle{
+                        -webkit-animation: explotionCircle 0.4s 1.3s 1;
                         animation: explotionCircle 0.4s 1.3s 1;
                     }
                 }
@@ -372,31 +412,42 @@ body{
             font-size: 24pt;
             font-weight: 900;
             margin-bottom: 10pt;
+            -webkit-transition: all ease 0.5s 0s;
             transition: all ease 0.5s 0s;
+            -webkit-transform-origin: left center;
             transform-origin: left center;
+            -webkit-transform: rotateY(90deg);
             transform: rotateY(90deg);
             opacity: 0;
             color: $blue;
         }
 
         .text-content{
+            -webkit-transition: all ease 0.5s 0.5s;
             transition: all ease 0.5s 0.5s;
+            -webkit-transform-origin: top center;
             transform-origin: top center;
+            -webkit-transform: rotateX(90deg);
             transform: rotateX(90deg);
             opacity: 0;
         }
 
         &.active{
             .text-title{
+                -webkit-transform: rotateY(0deg);
                 transform: rotateY(0deg);
                 opacity: 1;
+                -webkit-transition: all ease 1s 0s;
                 transition: all ease 1s 0s;
             }
 
             .text-content{
+                -webkit-transform-origin: top center;
                 transform-origin: top center;
+                -webkit-transform: rotateX(0deg);
                 transform: rotateX(0deg);
                 opacity: 1;
+                -webkit-transition: all ease 1s 0.5s;
                 transition: all ease 1s 0.5s;
             }
         }
@@ -415,6 +466,7 @@ body{
     }
 
     .phone-container{
+        -webkit-transform: scale(0.7);
         transform: scale(0.7);
     }
 
@@ -544,6 +596,7 @@ body{
         }
     }
     .phone-container{
+        -webkit-transform: scale(1);
         transform: scale(1);
     }
 

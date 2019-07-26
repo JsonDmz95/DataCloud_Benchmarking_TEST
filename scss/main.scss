@@ -17,16 +17,11 @@
 
 /// 4. Layout-related sections
 @import
-'layout/header',
-'layout/footer';
-
-/// 5. Components
-@import
-'components/button';
+'layout/header';
 
 /// 6. Page-specific styles
 @import
 'pages/home';
 
 @import
-'animations/animations'
+'animations/animations';

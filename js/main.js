@@ -35,8 +35,8 @@ function taglineEntrance() {
     });
 }
 
-let value = 0;
-let activateClic = false;
+var value = 0;
+var activateClic = false;
 $(document).ready(function(){
     setTimeout(function() {
         move();
@@ -44,7 +44,7 @@ $(document).ready(function(){
 
     taglineEntrance();
 
-    let titlesTime;
+    var titlesTime;
 
     if ($(window).width() < 1550) {
         titlesTime = 2150;
@@ -63,7 +63,7 @@ $(document).ready(function(){
         document.querySelector(`#dot-${i}`).dataset.delay = `${5650 - titlesTime  + (i * 51)}`;
     }
 
-    let a = 0;
+    var a = 0;
     setTimeout(function() {
         $('.counter').each(function() {
             var $this = $(this), countTo= $this.attr('data-value');
@@ -185,7 +185,7 @@ $(document).ready(function(){
 
 });
 
-let act;
+var act;
 function addCircle(){
 
     if(window.innerWidth>=768 && act<768){

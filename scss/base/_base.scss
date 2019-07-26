@@ -11,6 +11,36 @@ body{
   color: $text-color;
   font-size: 12pt;
   line-height: 1.25;
+
+  #site-preloader {
+      position: fixed;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 2000;
+      background-color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      opacity: 1;
+      transition: all 0.5s ease;
+
+      img{
+          -webkit-animation: imageOpacity 3s ease-in infinite;
+          animation: imageOpacity 3s ease-in infinite;
+      }
+  }
 }
 
 h1,

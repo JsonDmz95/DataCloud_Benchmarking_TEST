@@ -13,10 +13,20 @@ header{
             border: none;
             height: 60px;
             width: 60px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
+            -webkit-transition: all ease 0.3s;
             transition: all ease 0.3s;
             z-index: 10;
 
@@ -25,6 +35,7 @@ header{
                 background: $white;
                 height: 4px;
                 width: 40px;
+                -webkit-transition: all ease 0.3s;
                 transition: all ease 0.3s;
 
                 &.middle{
@@ -32,10 +43,12 @@ header{
                     opacity: 0;
                 }
                 &.top{
+                    -webkit-transform: rotate(225deg);
                     transform: rotate(225deg);
                     margin-bottom: -2px
                 }
                 &.bottom{
+                    -webkit-transform: rotate(-225deg);
                     transform: rotate(-225deg);
                     margin-top: -2px;
                 }
@@ -43,23 +56,30 @@ header{
 
 
             &.collapsed{
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
                 justify-content: space-between;
 
                 .icon-bar{
+                    -webkit-transform: rotate(0deg);
                     transform: rotate(0deg);
+                    -webkit-transform-origin: center;
                     transform-origin: center;
                     width: 40px;
                     &.top{
                         width: 20px;
+                        -webkit-animation: barTop infinite 5s;
                         animation: barTop infinite 5s;
                     }
                     &.middle{
                         width: 30px;
                         height: 4px;
                         opacity: 1;
+                        -webkit-animation: barMiddle infinite 5s;
                         animation: barMiddle infinite 5s;
                     }
                     &.bottom{
+                        -webkit-animation: barBottom infinite 5s;
                         animation: barBottom infinite 5s;
                     }
                 }
@@ -78,18 +98,30 @@ header{
             right: 0px;
             background: $tint-blue;
             height: 100% !important;
+            -webkit-transform: scale(0);
             transform: scale(0);
+            -webkit-transform-origin: top left;
             transform-origin: top left;
+            -webkit-transition: all ease 0.5s;
             transition: all ease 0.5s;
             ul.navbar-nav{
                 padding: 30px 0px 30px 0px;
                 opacity: 0;
+                -webkit-transition: all ease 0.5s 0.5s;
                 transition: all ease 0.5s 0.5s;
                 height: 100%;
                 width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
                 flex-direction: column;
+                -ms-flex-pack: distribute;
                 justify-content: space-around;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 transition: all ease 0.5s 0.5s;
 
@@ -104,6 +136,7 @@ header{
                         color: $white;
                         letter-spacing: letter-spacing(30pt, 50);
                         position: relative;
+                        -webkit-transition: all ease 0.5s;
                         transition: all ease 0.5s;
 
                         &::after{
@@ -116,6 +149,7 @@ header{
                             top: auto;
                             left: 50%;
                             right: auto;
+                            -webkit-transition: all ease 0.5s;
                             transition: all ease 0.5s;
                         }
 
@@ -143,6 +177,7 @@ header{
             }
 
             &.show{
+                -webkit-transform: scale(1);
                 transform: scale(1);
 
                 ul{
@@ -163,7 +198,11 @@ header{
         left: auto;
         height: 60px;
         width: 60px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
 
@@ -174,13 +213,17 @@ header{
             font-size: 30px;
             color: $white;
             line-height: 1;
+            -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+            -webkit-transform-origin: center;
             transform-origin: center;
+            -webkit-transition: all ease 0.5s;
             transition: all ease 0.5s;
         }
 
         &.collapsed{
             .fas{
+                -webkit-transform: rotate(0deg);
                 transform: rotate(0deg);
             }
         }
@@ -216,7 +259,9 @@ header{
         bottom: 0px;
         background-size: cover;
         background-position: 5% 100%;
+        -webkit-transition: all ease 0.5s;
         transition: all ease 0.5s;
+        -webkit-animation: bgMoving infinite 30s;
         animation: bgMoving infinite 30s;
 
 
