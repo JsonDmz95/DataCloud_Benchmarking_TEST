@@ -36,6 +36,10 @@ body{
     .center-content{
         position: relative;
     }
+
+    .container-fluid{
+        position: relative;
+    }
 }
 
 .phone-container{
@@ -117,6 +121,13 @@ body{
         .phone-content{
             z-index: 2;
             position: relative;
+
+            .counter{
+                &:after{
+                    content: '%';
+                    display: inline;
+                }
+            }
         }
 
     }
@@ -201,6 +212,7 @@ body{
                 // height: 24pt;
                 height: 20pt;
                 position: relative;
+                z-index: 4;
             }
 
             .toggler-title{
@@ -214,7 +226,9 @@ body{
                 font-weight: 900;
                 color: $blue;
                 text-align: center;
-
+                transform-origin: left center;
+                transform: rotateY(0deg);
+                opacity: 1;
             }
 
             &::before{
@@ -232,6 +246,7 @@ body{
                 left: calc(50% - 21pt);
                 right: auto;
                 transition: all ease 0.5s;
+                z-index: 3;
             }
 
             &::after{
@@ -251,7 +266,37 @@ body{
                 right: auto;
                 transition: all ease 0.5s;
                 transform: rotate(180deg);
+                z-index: 2;
             }
+
+            // .explosion{
+            //     position: absolute;
+            //     top: 0px;
+            //     bottom: 0px;
+            //     left: 0px;
+            //     right: 0px;
+            //     height: 100%;
+            //     width: 100%;
+            //     border-radius: 100%;
+            //     background: red;
+            //     z-index: 15;
+            //
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-items: center;
+            //
+            //     .dot-explosion{
+            //         position: absolute;
+            //         background: green;
+            //         height: 4px;
+            //         width: 4px;
+            //         border-radius: 100%;
+            //         &:nth-child(1){
+            //
+            //         }
+            //     }
+            // }
 
             @include on-event{
                 .toggler-title{
@@ -264,6 +309,55 @@ body{
                     border-color: $tint-blue;
                     transform: rotate(0deg);
                 }
+            }
+
+            &.active{
+
+                .toggler-title{
+                    transform: rotateY(90deg);
+                    opacity: 0;
+                    transition: all ease 1s 1s;
+                }
+
+            }
+        }
+    }
+}
+
+#carousel-container{
+    padding-top: 100px;
+
+    .text-carousel-item{
+        .text-title{
+            font-size: 24pt;
+            font-weight: 900;
+            margin-bottom: 10pt;
+            transition: all ease 1s 0.5s;
+            transform-origin: left center;
+            transform: rotateY(90deg);
+            opacity: 0;
+            color: $tint-blue;
+        }
+
+        .text-content{
+            transition: all ease 1s 1s;
+            transform-origin: top center;
+            transform: rotateX(90deg);
+            opacity: 0;
+        }
+
+        &.active{
+            .text-title{
+                transform: rotateY(0deg);
+                opacity: 1;
+                transition: all ease 1s 0s;
+            }
+
+            .text-content{
+                transform-origin: top center;
+                transform: rotateX(0deg);
+                opacity: 1;
+                transition: all ease 1s 0.5s;
             }
         }
     }
@@ -367,6 +461,16 @@ body{
             }
         }
     }
+
+    #carousel-container{
+        padding-top: 50px;
+        // position: absolute;
+        // bottom: auto;
+        // right: auto;
+        // left: calc(50% + 50px);
+        // top: calc(50% + 150px);
+        // width: 25%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -383,7 +487,7 @@ body{
 }
 @media (min-width: 1200px) {
     .main-content{
-
+        padding-bottom: 120pt;
         .tagline-container{
             .tagline{
                 margin-bottom: 130pt;
@@ -462,7 +566,7 @@ body{
 
 @media (min-width: 1550px) {
     .main-content{
-
+        padding-bottom: 160pt;
         .tagline-container{
             .tagline{
                 margin-bottom: 170pt;
