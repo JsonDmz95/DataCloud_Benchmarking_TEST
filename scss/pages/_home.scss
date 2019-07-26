@@ -227,8 +227,8 @@ body{
                 color: $blue;
                 text-align: center;
                 transform-origin: left center;
-                transform: rotateY(0deg);
-                opacity: 1;
+                // transform: rotateY(0deg);
+                // opacity: 1;
             }
 
             &::before{
@@ -269,54 +269,94 @@ body{
                 z-index: 2;
             }
 
-            // .explosion{
-            //     position: absolute;
-            //     top: 0px;
-            //     bottom: 0px;
-            //     left: 0px;
-            //     right: 0px;
-            //     height: 100%;
-            //     width: 100%;
-            //     border-radius: 100%;
-            //     background: red;
-            //     z-index: 15;
-            //
-            //     display: flex;
-            //     flex-direction: column;
-            //     justify-content: center;
-            //     align-items: center;
-            //
-            //     .dot-explosion{
-            //         position: absolute;
-            //         background: green;
-            //         height: 4px;
-            //         width: 4px;
-            //         border-radius: 100%;
-            //         &:nth-child(1){
-            //
-            //         }
-            //     }
-            // }
+            .explosion{
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                background: transparent;
+                z-index: 1;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all ease 0.5s;
+                transform: scale(0.5);
+
+                .explosion-dot{
+                    position: absolute;
+                    background: $blue;
+                    height: 1pt;
+                    width: 1pt;
+                    border-radius: 100%;
+
+                    $deg: 90deg;
+
+                    @for $i from 1 through 20{
+                        &:nth-child(#{$i}) {
+                            transform: rotate($deg) translate(30pt);
+                        }
+
+                        // Adding new value to deg
+                        $deg: ($deg + (18));
+                    }
+                }
+
+                .explosion-circle{
+                    position: absolute;
+                    top: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    right: 0px;
+                    background: transparent;
+                    border: 0px solid $blue;
+                    transition: all ease 0.5s;
+                    border-radius: 100%;
+                    transform: scale(0.8);
+                    transform-origin: center center;
+                }
+            }
 
             @include on-event{
                 .toggler-title{
-                    color: $tint-blue;
+                    // color: $tint-blue;
                 }
                 &::before{
-                    background: $tint-blue;
+                    // background: $tint-blue;
                 }
                 &::after{
-                    border-color: $tint-blue;
+                    // border-color: $tint-blue;
                     transform: rotate(0deg);
                 }
             }
 
             &.active{
 
+                img, &::before, &::after{
+                    animation: explotion 1.5s 1;
+                }
+
                 .toggler-title{
                     transform: rotateY(90deg);
                     opacity: 0;
                     transition: all ease 1s 1s;
+                }
+
+                .explosion{
+                    animation: explotionDots 0.4s 1.3s 1;
+
+                    .explotionDot{
+                        animation: explotionDot 0.4s 1.3s 1;
+                    }
+
+                    .explosion-circle{
+                        animation: explotionCircle 0.4s 1.3s 1;
+                    }
                 }
 
             }
@@ -332,15 +372,15 @@ body{
             font-size: 24pt;
             font-weight: 900;
             margin-bottom: 10pt;
-            transition: all ease 1s 0.5s;
+            transition: all ease 0.5s 0s;
             transform-origin: left center;
             transform: rotateY(90deg);
             opacity: 0;
-            color: $tint-blue;
+            color: $blue;
         }
 
         .text-content{
-            transition: all ease 1s 1s;
+            transition: all ease 0.5s 0.5s;
             transform-origin: top center;
             transform: rotateX(90deg);
             opacity: 0;
@@ -463,13 +503,22 @@ body{
     }
 
     #carousel-container{
-        padding-top: 50px;
-        // position: absolute;
-        // bottom: auto;
-        // right: auto;
-        // left: calc(50% + 50px);
-        // top: calc(50% + 150px);
-        // width: 25%;
+        padding: 0px 15px;
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: 90%;
+        bottom: auto;
+        width: 40%;
+
+        .text-carousel-item{
+            .text-title{
+                font-size: 12pt;
+            }
+            .text-content{
+                font-size: 11pt;
+            }
+        }
     }
 }
 
@@ -487,7 +536,7 @@ body{
 }
 @media (min-width: 1200px) {
     .main-content{
-        padding-bottom: 120pt;
+        padding-bottom: 150pt;
         .tagline-container{
             .tagline{
                 margin-bottom: 130pt;
@@ -562,6 +611,21 @@ body{
             }
         }
     }
+
+    #carousel-container{
+        top: 103%;
+        width: 44%;
+        max-width: 485px;
+
+        .text-carousel-item{
+            .text-title{
+                font-size: 19pt;
+            }
+            .text-content{
+                font-size: 12pt;
+            }
+        }
+    }
 }
 
 @media (min-width: 1550px) {
@@ -570,6 +634,17 @@ body{
         .tagline-container{
             .tagline{
                 margin-bottom: 170pt;
+            }
+        }
+    }
+
+    #carousel-container{
+        top: 95%;
+        left: calc(50% + 150px);
+
+        .text-carousel-item{
+            .text-title{
+                font-size: 24pt;
             }
         }
     }

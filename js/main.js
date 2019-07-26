@@ -36,7 +36,7 @@ function taglineEntrance() {
 }
 
 let value = 0;
-
+let activateClic = false;
 $(document).ready(function(){
     setTimeout(function() {
         move();
@@ -89,6 +89,100 @@ $(document).ready(function(){
         a = 1;
     }, 6000);
 
+    var animationToogler;
+    var animationDestiny;
+
+    if ($(window).width() >= 768){
+        //Start Text Animation
+        setTimeout(function() {
+            animationToogler = $('#btn-executive');
+            animationDestiny = $('#btn-executive').attr('data-destiny');
+
+            $(animationToogler).addClass('active');
+        }, 7000);
+        setTimeout(function() {
+            $(animationDestiny).toggle('fast');
+            $(animationDestiny).addClass('active');
+        }, 9000);
+        setTimeout(function() {
+            $(animationDestiny).removeClass('active');
+        }, 11000);
+        setTimeout(function() {
+            $(animationDestiny).toggle('fast');
+        }, 12000);
+        setTimeout(function() {
+            $(animationToogler).removeClass('active');
+        }, 12500);
+
+
+        setTimeout(function() {
+            animationToogler = $('#btn-data');
+            animationDestiny = $('#btn-data').attr('data-destiny');
+
+            $(animationToogler).addClass('active');
+        }, 13000);
+        setTimeout(function() {
+            $(animationDestiny).toggle('fast');
+            $(animationDestiny).addClass('active');
+        }, 15000);
+        setTimeout(function() {
+            $(animationDestiny).removeClass('active');
+        }, 17000);
+        setTimeout(function() {
+            $(animationDestiny).toggle('fast');
+        }, 18000);
+        setTimeout(function() {
+            $(animationToogler).removeClass('active');
+        }, 18500);
+
+
+        setTimeout(function() {
+            animationToogler = $('#btn-reporting');
+            animationDestiny = $('#btn-reporting').attr('data-destiny');
+
+            $(animationToogler).addClass('active');
+        }, 19000);
+        setTimeout(function() {
+            $(animationDestiny).toggle('fast');
+            $(animationDestiny).addClass('active');
+        }, 21000);
+        setTimeout(function() {
+            $(animationDestiny).removeClass('active');
+        }, 23000);
+        setTimeout(function() {
+            $(animationDestiny).toggle('fast');
+        }, 24000);
+        setTimeout(function() {
+            $(animationToogler).removeClass('active');
+        }, 24500);
+
+
+        setTimeout(function() {
+            animationToogler = $('#btn-benchmarking');
+            animationDestiny = $('#btn-benchmarking').attr('data-destiny');
+
+            $(animationToogler).addClass('active');
+        }, 25000);
+        setTimeout(function() {
+            $(animationDestiny).toggle('fast');
+            $(animationDestiny).addClass('active');
+        }, 27000);
+        setTimeout(function() {
+            $(animationDestiny).removeClass('active');
+        }, 29000);
+        setTimeout(function() {
+            $(animationDestiny).toggle('fast');
+        }, 30000);
+        setTimeout(function() {
+            $(animationToogler).removeClass('active');
+        }, 30500);
+        //END OF Text Animation
+
+        setTimeout(function() {
+            activateClic = true;
+        }, 31000);
+    }
+
 });
 
 let act;
@@ -106,62 +200,52 @@ function addCircle(){
 window.addEventListener('resize', function(event){
     addCircle();
 });
-//
-// $('.explosion').each(function(){
-//     for (var i = 1; i <= 20; i++) {
-//         $(this).html($(this).html() +'<div class="dot-explosion"></div>');
-//     }
-//     $(this).html($(this).html() + '<div class="circle-explosion"></div>');
-//
-//
-// });
+
 $('.tab-toggler').click(function(e) {
-    // var jump = $(this).attr('href');
-    // var position = $(jump).offset();
-    // $('body, html').stop().animate({
-    //     scrollTop: position.top
-    // }, 1000);
-    // e.preventDefault();
-     // event.preventDefault();
-    var destiny = $(this).attr('data-destiny');
-    var auxDestiny;
-    var auxToogler;
-
-    // $(this).addClass('active');-+-
+    if(activateClic){
+        var destiny = $(this).attr('data-destiny');
+        var auxDestiny;
+        var auxToogler;
 
 
+        if($(this).hasClass("active")){
+            $(destiny).removeClass('active');
+            $(this).removeClass('active');
 
-    if($(this).hasClass("active")){
-        $(destiny).removeClass('active');
-        $(this).removeClass('active');
+            setTimeout(function() {
+                $(destiny).toggle('fast');
+            }, 3000);
+        } else {
 
-        setTimeout(function() {
-            $(destiny).toggle('fast');
-        }, 3000);
-    } else {
+            auxDestiny = $('.tab-toggler.active').attr('data-destiny');
+            auxToogler = $('.tab-toggler.active');
 
-        auxDestiny = $('.tab-toggler.active').attr('data-destiny');
-        auxToogler = $('.tab-toggler.active');
+            $(auxToogler).removeClass('active');
+            $(this).addClass('active');
+            $(auxDestiny).removeClass('active');
+            setTimeout(function() {
+                $(auxDestiny).toggle('slow');
+            }, 1500);
 
-        $(auxToogler).removeClass('active');
-        $(this).addClass('active');
+            setTimeout(function() {
+                $(destiny).toggle('fast');
+                $(destiny).addClass('active');
 
-
-        // $('.text-carousel-item.active').toggle('fast');
-        $('.text-carousel-item.active');
-        setTimeout(function() {
-            $(auxDestiny).toggle('fast');
-        }, 1000);
-
-        setTimeout(function() {
-            $(destiny).toggle('fast');
-            $(destiny).addClass('active');
-
-        }, 1500);
+            }, 2000);
 
 
-
-
+        }
     }
+
+
+});
+
+
+$('.explosion').each(function(){
+    for (var i = 1; i <= 20; i++) {
+        $(this).html($(this).html() +'<div class="explosion-dot"></div>');
+    }
+    $(this).html($(this).html() + '<div class="explosion-circle"></div>');
+
 
 });
